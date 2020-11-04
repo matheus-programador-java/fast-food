@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prod_name">22dp</dimen>
+    <dimen name="prod_desc">13dp</dimen>
+    <dimen name="prod_vr">42dp</dimen>
+    <dimen name="rs">26dp</dimen>
+</resources>

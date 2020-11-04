@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Food Menu</string>
+    <string name="menu">Menu</string>
+    <string name="pizza">Pizza</string>
+    <string name="refri">Refri</string>
+    <string name="lanche">Lanche</string>
+    <string name="bebidas">Bebidas A.</string>
+    <string name="porcao">Porcão</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
