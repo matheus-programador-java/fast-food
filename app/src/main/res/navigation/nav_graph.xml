@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/lancheFrag">
+
+    <fragment
+        android:id="@+id/lancheFrag"
+        android:name="com.maquina.foodmenu.LancheFrag"
+        android:label="LancheFrag"
+        tools:layout="@layout/fragment_lanche">
+        <action
+            android:id="@+id/action_lancheFrag_to_pizzaFrag"
+            app:destination="@id/pizzaFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizzaFrag"
+        android:name="com.maquina.foodmenu.PizzaFrag"
+        android:label="PizzaFrag"
+        tools:layout="@layout/fragment_pizza">
+        <action
+            android:id="@+id/action_pizzaFrag_to_porcaoFrag"
+            app:destination="@id/porcaoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/porcaoFrag"
+        android:name="com.maquina.foodmenu.PorcaoFrag"
+        android:label="PorcaoFrag"
+        tools:layout="@layout/fragment_porcao"/>
+</navigation>
