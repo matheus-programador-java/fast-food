@@ -5,19 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.maquina.foodmenu.databinding.FragmentPorcaoBinding
+import com.maquina.foodmenu.R.layout.main_content
+import com.maquina.foodmenu.databinding.MainContentBinding
 
-class PorcaoFrag : Fragment() {
+class MainContent : Fragment() {
 
-    private lateinit var binding: FragmentPorcaoBinding
+    private lateinit var binding: MainContentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentPorcaoBinding.inflate(inflater)
+
+        binding = MainContentBinding.inflate(inflater)
         return binding.root
-//        return inflater.inflate(R.layout.fragment_porcao, container, false)
+//        return inflater.inflate(R.layout.main_content, container, false)
     }
 
 }
