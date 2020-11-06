@@ -18,6 +18,5 @@ class LancheFrag : Fragment() {
 
         binding = FragmentLancheBinding.inflate(inflater)
         return binding.root
-//        return inflater.inflate(R.layout.fragment_lanche, container, false)
     }
 }

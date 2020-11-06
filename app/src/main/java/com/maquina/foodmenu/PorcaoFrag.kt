@@ -17,7 +17,6 @@ class PorcaoFrag : Fragment() {
     ): View? {
         binding = FragmentPorcaoBinding.inflate(inflater)
         return binding.root
-//        return inflater.inflate(R.layout.fragment_porcao, container, false)
     }
 
 }

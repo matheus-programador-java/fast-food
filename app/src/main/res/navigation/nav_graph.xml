@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_lancheFrag_to_pizzaFrag"
             app:destination="@id/pizzaFrag" />
+        <action
+            android:id="@+id/action_lancheFrag_to_porcaoFrag"
+            app:destination="@id/porcaoFrag" />
     </fragment>
     <fragment
         android:id="@+id/pizzaFrag"
@@ -22,10 +25,20 @@
         <action
             android:id="@+id/action_pizzaFrag_to_porcaoFrag"
             app:destination="@id/porcaoFrag" />
+        <action
+            android:id="@+id/action_pizzaFrag_to_lancheFrag"
+            app:destination="@id/lancheFrag" />
     </fragment>
     <fragment
         android:id="@+id/porcaoFrag"
         android:name="com.maquina.foodmenu.PorcaoFrag"
         android:label="PorcaoFrag"
-        tools:layout="@layout/fragment_porcao"/>
+        tools:layout="@layout/fragment_porcao">
+        <action
+            android:id="@+id/action_porcaoFrag_to_lancheFrag2"
+            app:destination="@id/lancheFrag" />
+        <action
+            android:id="@+id/action_porcaoFrag_to_pizzaFrag"
+            app:destination="@id/pizzaFrag" />
+    </fragment>
 </navigation>

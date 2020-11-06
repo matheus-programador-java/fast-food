@@ -17,7 +17,6 @@ class PizzaFrag : Fragment() {
     ): View? {
         binding = FragmentPizzaBinding.inflate(inflater)
         return binding.root
-//        return inflater.inflate(R.layout.fragment_pizza, container, false)
     }
 
 }

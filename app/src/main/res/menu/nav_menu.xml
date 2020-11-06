@@ -4,11 +4,11 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/frag_lanche"
+            android:id="@+id/lancheFrag"
             android:title="@string/lanche" />
-        <item android:id="@+id/frag_pizza"
+        <item android:id="@+id/pizzaFrag"
             android:title="@string/pizza" />
-        <item android:id="@+id/frag_porcao"
+        <item android:id="@+id/porcaoFrag"
             android:title="@string/porcao" />
     </group>
 </menu>
