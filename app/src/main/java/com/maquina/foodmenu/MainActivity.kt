@@ -6,11 +6,13 @@ import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.AttributeSet
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
@@ -26,43 +28,35 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+    }
 
-
-
-
-//        binding.mainActivity.findViewById<Button>(R.id.btn_pizza).apply {
-//            setOnClickListener(View.OnClickListener { v ->
+//    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+//        println("Navigate Called!")
+//        val mainContentBinding =
+//            MainContentBinding.bind(binding.root.findViewById(R.id.main_content))
 //
-//                println("Pizza Click")
-//                val findNavController = binding.mainActivity.findNavController()
-//                if(findNavController != null){
-//                    println("Not null")
-//                }else{
-//                    println("Is null")
-//                }
-////                findNavController().navigate(R.id.frag_pizza)
-//            })
+//        var activeButton: Button
+//        var selectedButton: Button
+//
+////        Buttons capture
+//        ViewModelProvider(this).get(MainContentViewModel::class.java).selectedBtnId.also {
+//            activeButton = mainContentBinding.root.findViewById<Button>(it)
 //        }
-
-//        binding.root.findViewById<Button>(R.id.btn_pizza).apply {
-//            setOnClickListener(View.OnClickListener { v ->
 //
-//                println("Pizza Click")
-//
-////                findNavController().navigate(R.id.frag_pizza)
-//            })
+//        when (item.itemId) {
+//            R.id.lancheFrag -> selectedButton = mainContentBinding.btnLanche
+//            R.id.pizzaFrag -> selectedButton = mainContentBinding.btnPizza
+//            R.id.porcaoFrag -> selectedButton = mainContentBinding.btnPorcao
+//            else -> selectedButton = mainContentBinding.btnPizza
 //        }
-
-
-
 //
-//        binding.root.findViewById<Button>(R.id.btn_pizza).apply {
-//            setOnClickListener { v ->
-//                Toast.makeText(
-//                    v.context, "Pizza Click", Toast.LENGTH_SHORT
-//                )
-//                println("Pizza Click")
-//            }
-//        }
+//        MainContent.Companion.onNavigateChangeBtnSkin(this, resources, activeButton, selectedButton)
+//
+//        return true
+//    }
+
+    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
+        return super.onCreateView(name, context, attrs)
+
     }
 }
