@@ -1,6 +1,8 @@
 package com.maquina.foodmenu
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.res.Resources
 import android.graphics.drawable.Drawable
 import android.os.Build
@@ -73,6 +75,22 @@ class MainContent : Fragment() {
             }
         })
 
+        binding.imgWpp.setOnClickListener(View.OnClickListener {
+
+            val builder = AlertDialog.Builder(context)
+            val layoutInflater = requireActivity().layoutInflater
+
+            builder.setTitle("Contato")
+            builder.setView(layoutInflater.inflate(R.layout.fragment_contato_dlg, null))
+            builder.setPositiveButton("Ok", DialogInterface.OnClickListener { dialog, _ ->
+                {
+                    dialog.dismiss()
+                }
+            })
+            builder.create()
+            builder.show()
+        })
+
         return binding.root
     }
 
@@ -119,7 +137,7 @@ class MainContent : Fragment() {
         }
     }
 
-   private fun onNavigateChangeBtnSkin(
+    private fun onNavigateChangeBtnSkin(
         owner: ViewModelStoreOwner,
         resources: Resources,
         oldButton: Button,
